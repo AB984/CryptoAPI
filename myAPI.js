@@ -50,19 +50,19 @@ function displayCrypto(jsonOne, jsonTwo){
             let article = document.createElement('article');
             let clearfix = document.createElement('div');
             clearfix.setAttribute('class', 'clearfix');
-            let span = document.createElement('span');
+            let p = document.createElement('p');
 
                 var elementArr = new Array()
 
-            span.textContent += `Currency: ${cryptoName[i].name} -- Abbrev: ${cryptoName[i].id} -- Exchange Rate:  `;
+            p.textContent += `Currency: ${cryptoName[i].name} -- Abbrev: ${cryptoName[i].id} -- Exchange Rate:  `;
             for (const value in exchangeRate) {
 
                 var element = exchangeRate[value];
                 elementArr.push(element)
             }
-              span.textContent += elementArr[i]
+              p.textContent += elementArr[i]
 
-            article.appendChild(span);
+            article.appendChild(p);
             article.appendChild(clearfix);
             section.appendChild(article);
         }

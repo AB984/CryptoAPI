@@ -15,17 +15,22 @@ h2 {
 
 header {
     text-align: center;
-    background: url(https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 68vh;
+    padding: .5em;
+    height: 22vh;
     image-orientation: 180deg flip;
     margin-top: 0;
 }
 
+.image {
+    background: url(https://images.unsplash.com/photo-1534951009808-766178b47a4f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    margin: .1em;
+    height: 43vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .submit {
     background-color: whitesmoke;
-    padding: 10px;
+    padding: 1.5em;
     border-radius: 15px;
     font-weight: bolder;
     box-shadow: 2px 4px yellowgreen;
@@ -50,8 +55,8 @@ article {
     min-height: 90px; */
     background-color: #6495ed;
     display: inline-block;
-    padding: 6px;
-    margin: 1px;
+    padding: .5em;
+    margin: 1em;
     border-radius: 5px;
     flex-grow: 1;
     color: #d0d5c6;
